@@ -255,7 +255,7 @@ double calcualteMass(int rawMassData, int calPos)
         return 17 * ((rawMassData - calibration0[calPos]) / (calibration17[calPos] - calibration0[calPos]));
 
     if(rawMassData > calibration17[calPos])
-        return 17 + 17 * ((rawMassData - calibration17[calPos]) / (calibration34[calPos] - calibration17[calPos]));
+        return 32 * ((rawMassData - calibration17[calPos]) / (calibration34[calPos] - calibration17[calPos]));
 
     return 0.00;
 }
